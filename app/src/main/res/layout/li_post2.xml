@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f2f2f2"
+    android:layout_margin="4dp"
+    android:padding="8dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_medium"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_large"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="@dimen/spacing_xlarge"
+                android:layout_height="@dimen/spacing_xlarge"
+                android:foreground="@color/overlay_light_20"
+                android:src="@drawable/photo_female_1"
+             />
+
+            <View
+                android:layout_width="@dimen/spacing_large"
+                android:layout_height="0dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/userid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="userid"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/light_blue_400"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="posted a "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_40" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Note"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/light_blue_400"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:gravity="center_vertical"
+                    android:text="just now"
+                    android:textColor="@color/grey_20"
+                    android:textSize="@dimen/spacing_middle" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_large"
+            android:lineSpacingExtra="4dp"
+            tools:text="aarticle here"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/grey_60"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_large"
+            android:lineSpacingExtra="4dp"
+            tools:text="aarticle here"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/grey_500" />
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
